@@ -18,5 +18,13 @@ class Service extends Model
     ];
 
 
-    
+    public function cities(){
+        return $this->belongsTo(City::class);
+    }
+    public function categories(){
+        return $this->belongsTo(Category::class);
+    }
+    public function images(){
+        return $this->hasMany(Image::class);
+    }
 }
