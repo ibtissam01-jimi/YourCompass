@@ -18,4 +18,8 @@ class City extends Model
     public function services(){
         return $this->hasMany(Service::class);
     }
+
+    public function guides(){
+        return $this->hasMany(Guide::class);
+    }
 }
