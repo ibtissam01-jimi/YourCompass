@@ -27,4 +27,8 @@ class Service extends Model
     public function images(){
         return $this->hasMany(Image::class);
     }
+
+    public function favoritedBy(){
+        return $this->belongsToMany(User::class, 'favorites');
+    }
 }
