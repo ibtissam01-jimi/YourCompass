@@ -22,4 +22,7 @@ class Guide extends Model
     public function cities(){
         return $this->belongsTo(City::class);
     }
+    public function reviews(){
+        return $this->hasMany(Review::class);
+    }
 }

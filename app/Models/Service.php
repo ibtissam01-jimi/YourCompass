@@ -31,4 +31,7 @@ class Service extends Model
     public function favoritedBy(){
         return $this->belongsToMany(User::class, 'favorites');
     }
+    public function reviews(){
+        return $this->hasMany(Review::class);
+    }
 }

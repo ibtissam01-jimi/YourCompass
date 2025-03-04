@@ -16,4 +16,10 @@ class Review extends Model
     public function users(){
         return $this->belongsTo(User::class);
     }
+    public function services(){
+        return $this->belongsTo(Service::class);
+    }
+    public function guides(){
+        return $this->belongsTo(Guide::class);
+    }
 }
